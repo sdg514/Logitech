@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Exo-SemiBold';
+  src: url('Exo-SemiBold.eot');
+  src: url('Exo-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('Exo-SemiBold.svg#Exo-SemiBold') format('svg'),
+       url('Exo-SemiBold.ttf') format('truetype'),
+       url('Exo-SemiBold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+

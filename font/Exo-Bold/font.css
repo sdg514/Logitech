@@ -1,0 +1,11 @@
+@font-face {
+  font-family: 'Exo-Bold';
+  src: url('Exo-Bold.eot');
+  src: url('Exo-Bold.eot?#iefix') format('embedded-opentype'),
+       url('Exo-Bold.svg#Exo-Bold') format('svg'),
+       url('Exo-Bold.ttf') format('truetype'),
+       url('Exo-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
