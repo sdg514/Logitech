@@ -5,7 +5,7 @@ html {
 :root {
      --color-bg: #000000;
      /* 메인 배경 */
-     --color-text: #ffffff;
+     --color-text: #e4e4e4;
      /* 일반 텍스트 */
      --color-point: #00b2ff;
      /* 포인트 컬러 */
@@ -15,7 +15,7 @@ html {
      /* 보조 텍스트 */
      --font-size: 1.6rem;
      /* 기본 폰트 크기 */
-     --header-font: 2.4rem;
+     --head-font: 2.4rem;
      /* 네비게이션 폰트 크기 */
 }
 
@@ -23,9 +23,14 @@ html {
 .flex{
      display: flex;
 }
+.grid{
+     display: grid;
+}
+
 .gap{
 	gap: 2rem;
 }
+
 /* 라벨 화면에서 안보이게 */
 .label-hidden {
      position: absolute;
@@ -44,6 +49,22 @@ html {
      padding-right: 2rem;
      height: 100%;
      margin: 0 auto;
+     position: relative;
+}
+
+a.a_button{
+	padding: 1rem 2rem;
+	background-color: var(--color-point);
+	border: 2px solid var(--color-point);
+	border-radius: 10px;
+	font-weight: bold;
+	color: var(--color-bg);
+	font-size: var(--font-size);
+}
+
+a.a_button:hover{
+	background-color: transparent;
+	color: var(--color-point);
 }
 
 body {
@@ -63,7 +84,7 @@ header {
      left: 0;
      top: 0;
      z-index: 2;
-     background-color: rgba(26, 26, 26, .7);
+     transition: all 0.5s;
 }
 
 header > div {
@@ -76,6 +97,62 @@ header > div {
 .pc{
      height: 100%;
 }
+
+/* 중앙 pc 메뉴 */
+.pcMenu{
+     flex-flow: row wrap;
+     justify-content: center;
+     align-items: center;
+}
+
+.dropdown {
+     display: inline-block;
+     position: relative;
+}
+
+.dropdown button{
+     border:none;
+     font-size: var(--head-font);
+     cursor:pointer;
+     background-color: transparent;
+     color: var(--color-text);
+     transition: all 0.1s;
+}
+
+.dropdown button:hover{
+     border-bottom: 2px solid var(--color-point);
+     color: var(--color-point);
+}
+
+.dropdown-options {
+     display: none;
+     position: absolute;
+     /* position: fixed; */
+     /* top: 9rem; */
+     overflow: auto;
+     background-color: var(--color-bg);
+     border-radius:5px;
+     box-shadow: 0px 10px 10px 0px rgba(255, 255, 255, 0.4);
+}
+
+.dropdown:hover .dropdown-options {
+     display: flex;
+     flex-direction: column;
+}
+
+.dropdown-options a {
+     display: block;
+     color: var(--color-text);
+     text-decoration: none;
+     padding: 2rem 4rem;
+}
+
+.dropdown-options a:hover {
+     color: #0a0a23;
+     background-color: #ddd;
+     border-radius:5px;
+}
+
 
 header div.outer #infoMenu {
      justify-content: space-between;
@@ -122,6 +199,7 @@ header div.outer #infoMenu {
 }
 
 #qnb{
+     display: none;
      height: 2.2rem;
 }
 
@@ -189,7 +267,7 @@ header div.outer #infoMenu {
 
 #qnb .sidenav>ul {
      margin-top: 6rem;
-     font-size: var(--header-font);
+     font-size: var(--head-font);
      gap: 5rem;
      flex-direction: column;
      text-align: center;
@@ -239,7 +317,7 @@ footer {
 footer .outer > div {
      flex-direction: row;
      justify-content: space-between;
-     align-items: start;
+     align-items: center;
      padding-bottom: 1rem;
 }
 
@@ -258,6 +336,7 @@ footer .outer > div {
 
 .footer_content1 .Footer_title p{
      margin: 1rem 0;
+     font-size: 2rem;
 }
 
 .footer_content1 .Footer_email .flex > div{
@@ -284,25 +363,27 @@ footer .outer > div {
 }
 
 .footer_content1 .footer_social{
-     gap: 1rem;
+     gap: 3rem;
      padding-top: 1rem;
 }
 
 .footer_content2{
-     flex-flow: row nowrap;
-     gap: 7rem;
+     flex-flow: column wrap;
 }
 
-.footer_content2 > div{
-     flex: 1 1 30%;
+.footer_content2 > .flex{
+     justify-content: flex-start;
+     align-items: center;
+     gap: 3rem;
+     margin-bottom: 5rem;
 }
 
 .footer_content2 h3{
-     margin-bottom: 1rem;
+     font-size: 2rem;
 }
 
-.footer_content2 ul li{
-     margin-bottom: 0.5rem;
+.footer_content2 > .flex > .flex{
+     gap: 2rem;
 }
 
 .footer_content2 ul a{
@@ -320,7 +401,7 @@ footer .outer > div {
 }
 
 footer .b_menu li a{
-     padding-left: .25rem;
+     padding-left: 1.25rem;
      color: #bfbfbf;
 }
 
@@ -329,7 +410,7 @@ footer .b_menu li:nth-child(1) a{
 }
 
 footer .b_menu li a::before{
-     padding-right: .25rem;
+     padding-right: 1.25rem;
      content: "|";
 }
 
@@ -342,7 +423,7 @@ footer .b_menu li:nth-child(1) a:before{
      position: fixed;
      right: 4rem;
      bottom: 4rem;
-     background-color: #fff;
+     background-color: #e4e4e4;
      border: 2px solid var(--color-point);
      padding: 1rem .5rem;
      border-radius: 10px;
@@ -353,6 +434,14 @@ footer .b_menu li:nth-child(1) a:before{
 @media (max-width: 1024px) {
      .outer{
           max-width: 1024px;
+     }
+
+     .pcMenu{
+          display: none;
+     }
+
+     #qnb{
+          display: flex;
      }
 
      #qnb .sidenav{
@@ -375,8 +464,16 @@ footer .b_menu li:nth-child(1) a:before{
           max-width: 640px;
      }
 
+     .pcMenu{
+          display: none;
+     }
+
      .search-box{
           display: none;
+     }
+
+     #qnb{
+          display: flex;
      }
 
      #qnb .sidenav{
