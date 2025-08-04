@@ -11,7 +11,7 @@ ul, ol, dl { list-style:none; }
 a { vertical-align:top; text-decoration:none; color:#333; }
 table { border-collapse:collapse; border-spacing:0; }
 input, select, label { vertical-align:middle; }
-button, input, select, textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle;}
+button, input, select, textarea { font-size:100%; margin:0; vertical-align:baseline; *vertical-align:middle; background: none; border: none;}
 button, input { line-height:normal; }
 button, select { text-transform:none; }
 

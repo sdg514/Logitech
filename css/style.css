@@ -125,6 +125,11 @@
 
 .gradientCard{
 	background: linear-gradient(170deg, #14161c, #393c49);
+	flex: 1;
+}
+
+.left1{
+	flex: 1 1 50%;
 }
 
 .content-text{
@@ -205,7 +210,7 @@
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/combos/mk470-slim-wireless-combo/gallery-images/mk470-gallery-offwhite-matt-kor-1.png);
 }
 
-/*2번쨰 content*/
+/*2,3번쨰 content*/
 
 #content2{
 	position: relative;
@@ -216,28 +221,31 @@
 	
 }
 
-#content2 .outer{
+#content2 .content2-bg{
 	background-image: url(https://resource.logitechg.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-pro/04-banner-pro-series-pro-x-superlight-desktop.png?v=1);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	height: 90rem;
-	flex-flow: column nowrap;
-	justify-content: center;
 }
 
 
-#content3 .outer{
+#content3 .content3-bg{
 	background-image: url(https://resource.logitechg.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/sim-racing-lp/sim-racing-lp-driving-confi-banner-desktop-3.jpg?v=1);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	height: 90rem;
-	flex-flow: column nowrap;
-	justify-content: center;
+	
 }
+
+	#content2 .outer,
+	#content3 .outer{
+		flex-flow: column nowrap;
+		justify-content: center;
+	}
 
 	 #content2 .content-text2{
 		font-size: 3rem;
@@ -264,14 +272,7 @@
   		transform: translateX(0);
 	}
 
-	/* #content2, #content3 공통*/
-	
-
-	.content-text2.active {
-		opacity: 1;
-  		transform: translateX(0);
-	}
-
+	/* #content2, #content3 공통 css*/
 	.content-text2 .dt_line{
 		font-weight: bolder;
 		position: relative;
@@ -297,3 +298,70 @@
 		padding: 1rem 0;
 		margin-bottom: 2rem;
 	}
+
+
+/* 4번째 content */
+
+#content4{
+	position: relative;
+	background: url(../images/content3.png) no-repeat center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+}
+
+#content4 .outer{
+	justify-content: center;
+	align-items: center;
+}
+
+	#content4 .ghub-text{
+		width: 50%;
+		height: 50%;
+		border-radius: 50px;
+		/* padding: 2rem 4rem; */
+		background-color: rgba(0, 0, 0, 0.9);
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		/* transform: translateY(300px); */
+		transform: rotate(360deg);
+		transition: all 0.7s ease;
+		opacity: 0;
+	}
+	
+
+	#content4 .ghub-text.active {
+		opacity: 1;
+  		/* transform: translateY(0); */
+		transform: rotate(0);
+	}
+
+	#content4 .ghub-text p{
+		padding: 2rem 0;
+	}
+
+	.ghub-buttons{
+		padding-top: 1rem;
+	}
+
+
+@media (max-width: 1024px){
+	.tabpanel{
+		flex-direction: column;
+	}
+
+	.product-grid{
+		width: 100%;
+	}
+}
+@media (max-width: 640px){
+	.tabpanel{
+		flex-direction: column;
+	}
+
+	.product-grid{
+		width: 100%;
+	}
+}

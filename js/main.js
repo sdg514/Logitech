@@ -89,10 +89,23 @@ tabButtons.forEach((tab, index) => {
 
 // content 스크롤시 텍스트 애니메이션
 document.addEventListener('DOMContentLoaded', function () {
-  const content = document.querySelectorAll('.content-text2');
+  const content2 = document.querySelectorAll('.content-text2');
+  const ghub = document.querySelectorAll('.ghub-text');
 
   window.addEventListener('scroll', () => {
-    content.forEach(el => {
+    content2.forEach(el => {
+      const rect = el.getBoundingClientRect();
+
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        el.classList.add('active');   // 화면 안에 들어오면 보이기
+      } else {
+        el.classList.remove('active'); // 벗어나면 다시 숨김
+      }
+    });
+  });
+
+  window.addEventListener('scroll', () => {
+    ghub.forEach(el => {
       const rect = el.getBoundingClientRect();
 
       if (rect.top < window.innerHeight && rect.bottom > 0) {
