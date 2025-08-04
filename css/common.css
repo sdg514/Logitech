@@ -103,7 +103,7 @@ body {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     padding: 2rem 0;
+     padding: 2rem;
 }
 
 /* 중앙 pc 메뉴 */
@@ -203,11 +203,15 @@ body {
 }
 
 #qnb #menuOpen {
-     background-image: url(../images/menu.png);
      width: 3.2rem;
-     height: 2.2rem;
-     background-color: transparent;
-     background-repeat: no-repeat;
+     line-height: 0.8;
+}
+
+#qnb #menuOpen span{
+     display: inline-block;
+     width: 3.2rem;
+     height: 2px;
+     background-color: white;
 }
 
 
@@ -488,9 +492,9 @@ footer .b_menu li:nth-child(1) a:before {
           --head-font: 1.6rem;
           /* 네비게이션 폰트 크기 */
      }
-     .outer{
+     /* .outer{
           max-width: 35rem;
-     }
+     } */
      .gap {
           gap: 1rem;
      }
