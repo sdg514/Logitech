@@ -8,12 +8,18 @@ html {
      /* 메인 배경 */
      --color-text: #e4e4e4;
      /* 일반 텍스트 */
-     --color-point: rgb(0, 179, 255);
+     --color-point: #00b3ff;
      /* 포인트 컬러 */
      --color-sub: #1a1a1a;
      /* 섹션 구분 배경 */
      --color-gray: #999999;
      /* 보조 텍스트 */
+     --bigbig-size: 6rem;
+     /* 매우 폰트 크기 */
+     --big-size: 3rem;
+     /* 작은 폰트 크기 */
+     --small-size: 2rem;
+     /* 큰 폰트 크기 */
      --font-size: 1.6rem;
      /* 기본 폰트 크기 */
      --head-font: 2.4rem;
@@ -76,25 +82,24 @@ a.a_button:hover {
 
 body {
      font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-     font-size: 1.6rem;
+     font-size: var(--font-size);
      line-height: 1.6;
      color: var(--color-text);
      background-color: var(--color-bg);
 }
 
 /*header*/
-header {
+#header {
      position: fixed;
      width: 100%;
      height: auto;
-     /* position:absolute; */
      left: 0;
      top: 0;
      z-index: 2;
      transition: all 0.5s;
 }
 
-header>div {
+#header > div {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
@@ -339,7 +344,7 @@ footer .outer>div {
 
 .footer_content1 .Footer_title p {
      margin: 1rem 0;
-     font-size: 2rem;
+     font-size: var(--font-size);
 }
 
 .footer_content1 .Footer_email .flex > div {
@@ -383,7 +388,7 @@ footer .outer>div {
 }
 
 .footer_content2 h3 {
-     font-size: 2rem;
+     font-size: var(--small-size);
 }
 
 .footer_content2 > .flex > .flex {
@@ -429,13 +434,28 @@ footer .b_menu li:nth-child(1) a:before {
      bottom: 4rem;
      background-color: #e4e4e4;
      border: 2px solid var(--color-point);
-     padding: 1rem .5rem;
+     padding: .5rem;
      border-radius: 10px;
      color: #000;
 }
 
 /* 태블릿 */
 @media (max-width: 1024px){
+     :root {
+          --bigbig-size: 5rem;
+          /* 매우 폰트 크기 */
+          --big-size: 2.5rem;
+          /* 작은 폰트 크기 */
+          --small-size: 1.8rem;
+          /* 큰 폰트 크기 */
+          --font-size: 1.4rem;
+          /* 기본 폰트 크기 */
+          --head-font: 2rem;
+          /* 네비게이션 폰트 크기 */
+     }
+     .gap {
+          gap: 1rem;
+     }
      .pcMenu{
           display: none;
      }
@@ -458,11 +478,30 @@ footer .b_menu li:nth-child(1) a:before {
 
      .footer_content2{
           padding: 2rem 0;
+          gap: 2rem;
      }
 }
 
 /* 모바일 */
 @media (max-width: 640px){
+     :root {
+          --bigbig-size: 4rem;
+          /* 매우 폰트 크기 */
+          --big-size: 2rem;
+          /* 작은 폰트 크기 */
+          --small-size: 1.4rem;
+          /* 큰 폰트 크기 */
+          --font-size: 1.2rem;
+          /* 기본 폰트 크기 */
+          --head-font: 1.6rem;
+          /* 네비게이션 폰트 크기 */
+     }
+     .gap {
+          gap: 1rem;
+     }
+     .pc{
+          display: block;
+     }
      .pcMenu{
           display: none;
      }
@@ -490,6 +529,7 @@ footer .b_menu li:nth-child(1) a:before {
 
      .footer_content2>.flex{
           flex-direction: column;
+          gap: 1rem;
      }
 
      .footer_content2 > .flex > .flex{
