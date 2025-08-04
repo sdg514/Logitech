@@ -106,14 +106,6 @@ body {
      padding: 2rem 0;
 }
 
-.logo {
-     height: 100%;
-}
-
-.logo a {
-     display: inline-block;
-}
-
 /* 중앙 pc 메뉴 */
 .pcMenu {
      gap: 3rem;
@@ -496,6 +488,9 @@ footer .b_menu li:nth-child(1) a:before {
           --head-font: 1.6rem;
           /* 네비게이션 폰트 크기 */
      }
+     .outer{
+          max-width: 35rem;
+     }
      .gap {
           gap: 1rem;
      }
@@ -508,6 +503,10 @@ footer .b_menu li:nth-child(1) a:before {
      
      .search-box{
           display: none;
+     }
+
+     .logo img{
+          width: 12rem;
      }
 
      #qnb{
