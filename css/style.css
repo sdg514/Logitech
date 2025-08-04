@@ -365,18 +365,22 @@
 		flex-direction: column;
 	}
 
+	.card{
+		min-height: 20rem;
+	}
+
 	#content2 .content2-bg,
 	#content3 .content3-bg{
-		height: 50rem;
+		height: 40rem;
 	}
 
 	#content4{
-		height: 50vh;
+		height: 40rem;
 	}
 
 	#content4 .ghub-text{
 		width: auto;
 		height: auto;
-		padding: 5rem 4rem;
+		padding: 5rem 2rem;
 	}
 }

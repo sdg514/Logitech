@@ -39,7 +39,7 @@ html {
      gap: 2rem;
 }
 
-.pc{
+.pc {
      display: none;
 }
 
@@ -99,7 +99,7 @@ body {
      transition: all 0.5s;
 }
 
-#header > div {
+#header>div {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
@@ -207,11 +207,11 @@ body {
      line-height: 0.8;
 }
 
-#qnb #menuOpen span{
+#qnb #menuOpen span {
      display: inline-block;
      width: 3.2rem;
      height: 2px;
-     background-color: white;
+     background-color: #fff;
 }
 
 
@@ -343,7 +343,7 @@ footer .outer>div {
      font-size: var(--font-size);
 }
 
-.footer_content1 .Footer_email .flex > div {
+.footer_content1 .Footer_email .flex>div {
      width: 100%;
 }
 
@@ -372,6 +372,47 @@ footer .outer>div {
      padding-top: 1rem;
 }
 
+.footer_content1 .footer_social a {
+     background-color: #fff;
+     text-align: center;
+     font-size: var(--small-font);
+     display: flex;
+     padding: 1rem;
+     border-radius: 50%;
+     position: relative;
+     overflow: hidden;
+     border: 3px solid #fff;
+     z-index: 1;
+}
+
+.footer_content1 .footer_social a .icon {
+     position: relative;
+     color: #262626;
+     transition: .5s;
+     z-index: 3;
+}
+
+.footer_content1 .footer_social a:hover .icon {
+     color: var(--color-text);
+     transform: rotateY(360deg);
+}
+
+.footer_content1 .footer_social a:before {
+     content: "";
+     position: absolute;
+     top: 100%;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     transition: .5s;
+     z-index: 2;
+}
+
+.footer_content1 .footer_social a:hover:before {
+     top: 0;
+     background-color: var(--color-point);
+}
+
 .footer_content2 {
      flex-flow: column wrap;
      gap: 5rem;
@@ -387,7 +428,7 @@ footer .outer>div {
      font-size: var(--small-size);
 }
 
-.footer_content2 > .flex > .flex {
+.footer_content2>.flex>.flex {
      gap: 2rem;
 }
 
@@ -436,7 +477,7 @@ footer .b_menu li:nth-child(1) a:before {
 }
 
 /* 태블릿 */
-@media (max-width: 1024px){
+@media (max-width: 1024px) {
      :root {
           --bigbig-size: 5rem;
           /* 매우 폰트 크기 */
@@ -449,41 +490,43 @@ footer .b_menu li:nth-child(1) a:before {
           --head-font: 2rem;
           /* 네비게이션 폰트 크기 */
      }
+
      .gap {
           gap: 1rem;
      }
-     .pcMenu{
-          display: none;
-     }
-     
-     .search-box{
+
+     .pcMenu {
           display: none;
      }
 
-     #qnb{
+     .search-box {
+          display: none;
+     }
+
+     #qnb {
           display: block;
      }
 
-     #qnb .sidenav{
+     #qnb .sidenav {
           width: 50%;
      }
 
-     footer .outer>div{
+     footer .outer>div {
           flex-direction: column;
      }
 
-     .footer_content2{
+     .footer_content2 {
           padding: 2rem 0;
           gap: 2rem;
      }
 }
 
 /* 모바일 */
-@media (max-width: 640px){
+@media (max-width: 640px) {
      :root {
           --bigbig-size: 4rem;
           /* 매우 폰트 크기 */
-          --big-size: 2rem;
+          --big-size: 1.8rem;
           /* 작은 폰트 크기 */
           --small-size: 1.4rem;
           /* 큰 폰트 크기 */
@@ -492,59 +535,68 @@ footer .b_menu li:nth-child(1) a:before {
           --head-font: 1.6rem;
           /* 네비게이션 폰트 크기 */
      }
-     /* .outer{
-          max-width: 35rem;
-     } */
+
      .gap {
           gap: 1rem;
      }
-     .pc{
+
+     .pc {
           display: block;
      }
-     .pcMenu{
-          display: none;
-     }
-     
-     .search-box{
+
+     .pcMenu {
           display: none;
      }
 
-     .logo img{
+     .search-box {
+          display: none;
+     }
+
+     .logo img {
           width: 12rem;
      }
 
-     #qnb{
+     #qnb {
           display: block;
      }
 
-     #qnb .sidenav{
+     #qnb .sidenav {
           width: 100%;
      }
 
-     footer .outer>div{
+     footer .outer>div {
           flex-direction: column;
      }
 
-     .footer_content2{
+     .footer_content1 .footer_social{
+          gap: 2rem;
+     }
+
+     .footer_content2 {
           gap: 2rem;
           padding: 2rem 0;
      }
 
-     .footer_content2>.flex{
+     .footer_content2>.flex {
           flex-direction: column;
           gap: 1rem;
      }
 
-     .footer_content2 > .flex > .flex{
+     .footer_content2>.flex>.flex {
           flex-wrap: wrap;
           justify-content: center;
      }
 
-     .footer_content3{
+     .footer_content3 {
           text-align: center;
      }
 
-     .footer_content3 ul{
+     .footer_content3 ul {
           justify-content: center;
+     }
+     
+     #onTop{
+          right: 2rem;
+          bottom: 2rem;
      }
 }
