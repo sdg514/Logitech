@@ -322,7 +322,7 @@ footer .outer>div {
      flex-direction: row;
      justify-content: space-between;
      align-items: center;
-     padding-bottom: 1rem;
+     padding-bottom: 3rem;
 }
 
 .footer_content1 {
@@ -569,6 +569,7 @@ footer .b_menu li:nth-child(1) a:before {
      }
 
      .footer_content1 .footer_social{
+          justify-content: center;
           gap: 2rem;
      }
 
