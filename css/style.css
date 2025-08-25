@@ -119,7 +119,7 @@
 
 .card:hover{
 	transform: translateY(-4px);
-	box-shadow: 0 0 10px #ffffff94;
+	box-shadow: 0 0 15px #ffffff94;
 }
 
 .gradientCard{
@@ -320,7 +320,7 @@
 	align-items: center;
 	text-align: center;
 	/* transform: translateY(300px); */
-	transform: rotate(360deg);
+	transform:	translateY(-300px);
 	transition: all 0.7s ease;
 	opacity: 0;
 }
@@ -328,7 +328,7 @@
 
 #content4 .ghub-text.active {
 	opacity: 1;
-	transform: rotate(0);
+	transform:	translateY(0);
 }
 
 #content4 .ghub-text p{

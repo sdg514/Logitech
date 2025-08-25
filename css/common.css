@@ -106,6 +106,12 @@ body {
      padding: 2rem;
 }
 
+.logo > a{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+}
+
 /* 중앙 pc 메뉴 */
 .pcMenu {
      gap: 3rem;
@@ -207,9 +213,9 @@ body {
      line-height: 0.8;
 }
 
-#qnb #menuOpen span {
+#qnb #menuOpen > span {
      display: inline-block;
-     width: 3.2rem;
+     width: 100%;
      height: 2px;
      background-color: #fff;
 }
@@ -548,10 +554,15 @@ footer .b_menu li:nth-child(1) a:before {
           display: none;
      }
 
+     #qnb #menuOpen{
+          width: 3rem;
+          line-height: 0.7;
+     }
+
      .search-box {
           display: none;
      }
-
+     
      .logo img {
           width: 12rem;
      }
