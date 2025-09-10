@@ -15,7 +15,7 @@
 
 	<meta property="og:title" content="서동군 로지텍 포트폴리오">
     <meta property="og:description" content="서동군의 로지텍 포트폴리오 사이트입니다">
-    <meta property="og:image" content="https://logitech-sdg.netlify.app//images/og-image.jpg">
+    <meta property="og:image" content="https://logitech-sdg.netlify.app/images/logo2.png">
     <meta property="og:url" content="https://logitech-sdg.netlify.app/">
     <meta property="og:type" content="website">
 
@@ -25,6 +25,11 @@
 	<!-- 구글 폰트 -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 	
+	<!-- AOS 라이브러리 -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 	<!-- 폰트 어썸 -->
 	<link
   rel="stylesheet"
@@ -149,8 +154,8 @@
 		<h2 class="label-hidden">Logitech 제품 정보 탭 영역</h2>
 		<div class="outer">
 			<div class="tab flex gap" role="tablist" aria-label="제품 정보 탭">
-				<button type="button" role="tab" aria-selected="true" aria-controls="panel1" id="tab1" tabindex="0" class="active">Logitech G<br class="pc"/> 카테고리</button>
-				<button type="button" role="tab" aria-selected="false" aria-controls="panel2" id="tab2" tabindex="-1">Logitech<br class="pc"/> 카테고리</button>
+				<button type="button" data-aos="fade-up" role="tab" aria-selected="true" aria-controls="panel1" id="tab1" tabindex="0" class="active">Logitech G<br class="pc"/> 카테고리</button>
+				<button type="button" data-aos="fade-up" role="tab" aria-selected="false" aria-controls="panel2" id="tab2" tabindex="-1">Logitech<br class="pc"/> 카테고리</button>
 			</div>
 
 			<div class="tabpanel-wrapper">
@@ -158,7 +163,7 @@
 				<div role="tabpanel" id="panel1" aria-labelledby="tab1" class="tabpanel active flex gap">
 					<div class="product-grid flex gap">
 						<div class="flex gap">
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lgG_mouse">
 									<dl class="content-text flex">
 										<dt>게이밍 마우스</dt>
@@ -166,7 +171,7 @@
 									</dl>
 								</a>
 							</div>
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lgG_headset">
 									<dl class="content-text flex">
 										<dt>게이밍 헤드셋</dt>
@@ -175,7 +180,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="gradientCard">
+						<div class="gradientCard" data-aos="fade-up">
 							<a class="card lgG_keyboard">
 								<dl class="content-text flex">
 									<dt>게이밍 키보드</dt>
@@ -185,7 +190,7 @@
 						</div>
 					</div>
 					<div class="product-grid flex gap">
-						<div class="gradientCard">
+						<div class="gradientCard" data-aos="fade-up">
 							<a class="card lgG_combo">
 								<dl class="content-text flex">
 									<dt>게이밍 콤보</dt>
@@ -194,7 +199,7 @@
 							</a>
 						</div>
 						<div class="flex gap">
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lgG_Accessory">
 									<dl class="content-text flex">
 										<dt>게이밍 악세서리</dt>
@@ -202,7 +207,7 @@
 									</dl>
 								</a>
 							</div>
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lgG_racing">
 									<dl class="content-text flex">
 										<dt>게이밍 레이싱 휠</dt>
@@ -217,7 +222,7 @@
 				<!-- Logitech 카테고리 -->
 				<div role="tabpanel" id="panel2" aria-labelledby="tab2" class="tabpanel flex gap">
 					<div class="product-grid flex gap">
-						<div class="gradientCard">
+						<div class="gradientCard" data-aos="fade-up">
 							<a class="card lg_keyboard">
 								<dl class="content-text flex">
 									<dt>키보드</dt>
@@ -226,7 +231,7 @@
 							</a>
 						</div>
 						<div class="flex gap">
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lg_mouse">
 									<dl class="content-text flex">
 										<dt>마우스</dt>
@@ -234,7 +239,7 @@
 									</dl>
 								</a>
 							</div>
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lg_headset">
 									<dl class="content-text flex">
 										<dt>헤드셋</dt>
@@ -246,7 +251,7 @@
 					</div>
 					<div class="product-grid flex gap">
 						<div class="flex gap">
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lg_Accessory">
 									<dl class="content-text flex">
 										<dt>악세서리</dt>
@@ -254,7 +259,7 @@
 									</dl>
 								</a>
 							</div>
-							<div class="gradientCard">
+							<div class="gradientCard" data-aos="fade-up">
 								<a class="card lg_webcam">
 									<dl class="content-text flex">
 										<dt>웹캠</dt>
@@ -263,7 +268,7 @@
 								</a>
 							</div>
 						</div>
-						<div class="gradientCard">
+						<div class="gradientCard" data-aos="fade-up">
 							<a class="card lg_combo">
 								<dl class="content-text flex">
 									<dt>콤보</dt>
@@ -282,9 +287,9 @@
 		<div class="content2-bg">
 			<div class="outer flex">
 				<div class="content-text2">
-					<h3 class="dt_line">PRO 시리즈</h3>
-					<p>완전한 몰입. 당신과 승리 사이에 가로막는 것은<br /> 아무것도 없습니다.</p>
-					<a href="#" class="a_button" aria-label="PRO 시리즈 구매하기">PRO 시리즈 구매하기</a>
+					<h3 class="dt_line" data-aos="fade-left">PRO 시리즈</h3>
+					<p data-aos="fade-left">완전한 몰입. 당신과 승리 사이에 가로막는 것은<br /> 아무것도 없습니다.</p>
+					<a href="#" class="a_button" aria-label="PRO 시리즈 구매하기" data-aos="fade-left">PRO 시리즈 구매하기</a>
 				</div>
 			</div>
 		</div>
@@ -295,9 +300,9 @@
 		<div class="content3-bg">
 			<div class="outer flex">
 				<div class="content-text2">
-					<h3 class="dt_line">ASTRO 시리즈</h3>
-					<p>트렌드 하이엔드 콘솔 헤드셋 스타일리시한<br/> 플레이를 즐겨보세요.</p>
-					<a href="#" class="a_button" aria-label="ASTRO 시리즈 구매하기">ASTRO 시리즈 구매하기</a>
+					<h3 class="dt_line" data-aos="fade-right">ASTRO 시리즈</h3>
+					<p data-aos="fade-right">트렌드 하이엔드 콘솔 헤드셋 스타일리시한<br/> 플레이를 즐겨보세요.</p>
+					<a href="#" class="a_button" aria-label="ASTRO 시리즈 구매하기" data-aos="fade-right">ASTRO 시리즈 구매하기</a>
 				</div>
 			</div>
 		</div>
@@ -306,12 +311,12 @@
 	<section id="content4">
 		<h2 class="label-hidden">Logitech G HUB 다운로드</h2>
 		<div class="outer flex">
-			<div class="ghub-text flex">
-				<h2>LOGITECH G HUB 다운로드</h2>
-				<p>로지텍 G 기어의 잠재력을 100% 끌어내세요.<br>G HUB는 키 매핑, RGB 설정,<br class="pc"/> 프로필 저장을 지원합니다.</p>
+			<div class="ghub-text flex" data-aos="fade-up">
+				<h2 data-aos="fade-up">LOGITECH G HUB 다운로드</h2>
+				<p data-aos="fade-up">로지텍 G 기어의 잠재력을 100% 끌어내세요.<br>G HUB는 키 매핑, RGB 설정,<br class="pc"/> 프로필 저장을 지원합니다.</p>
 				<div class="ghub-buttons flex gap">
-					<a href="#" class="a_button">Windows용<br class="pc"/> 다운로드</a>
-					<a href="#" class="a_button">Mac용 <br class="pc"/> 다운로드</a>
+					<a href="#" class="a_button" data-aos="fade-up">Windows용<br class="pc"/> 다운로드</a>
+					<a href="#" class="a_button" data-aos="fade-up">Mac용 <br class="pc"/> 다운로드</a>
 				</div>
 			</div>
 		</div>
@@ -321,11 +326,11 @@
 		<div class="outer">
 			<div class="flex">
 				<div class="footer_content1 flex gap">
-					<div class="Footer_title">
+					<div class="Footer_title" data-aos="fade-up">
 						<h2><a href="./index.html">Logitech</a></h2>
 						<p>지금 가입하고 환영 할인과 구독자 한정 혜택을 받아보세요.</p>
 					</div>
-					<form class="Footer_email" aria-label="이메일 구독">
+					<form class="Footer_email" aria-label="이메일 구독" data-aos="fade-up">
 						<label for="emailsubscribe" class="label-hidden">newsletter</label>
 						<div class="flex">
 							<div>
@@ -337,15 +342,15 @@
 					</form>
 
 					<div class="footer_social flex">
-						<a href="#" target="_blank" aria-label="discord"><i class="fa-brands fa-discord icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="facebook"><i class="fa-brands fa-facebook icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="youtube"><i class="fa-brands fa-youtube icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="x-twitter"><i class="fa-brands fa-x-twitter icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="instagram"><i class="fa-brands fa-instagram icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="discord" data-aos="fade-up"><i class="fa-brands fa-discord icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="facebook" data-aos="fade-up"><i class="fa-brands fa-facebook icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="youtube" data-aos="fade-up"><i class="fa-brands fa-youtube icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="x-twitter" data-aos="fade-up"><i class="fa-brands fa-x-twitter icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="instagram" data-aos="fade-up"><i class="fa-brands fa-instagram icon flex"></i></a>
 					</div>
 				</div>
 				<nav class="footer_content2 flex">
-					<div class="flex">
+					<div class="flex" data-aos="fade-up">
 						<h3>Logitech</h3>
 						<ul class="flex">
 							<li><a href="#" title="소개">소개</a></li>
@@ -354,7 +359,7 @@
 							<li><a href="#" title="블로그">블로그</a></li>
 						</ul>
 					</div>
-					<div class="flex">
+					<div class="flex" data-aos="fade-up">
 						<h3>제품</h3>
 						<ul class="flex">
 							<li><a href="#" title="마우스">마우스</a></li>
@@ -365,7 +370,7 @@
 							<li><a href="#" title="악세서리">악세서리</a></li>
 						</ul>
 					</div>
-					<div class="flex">
+					<div class="flex" data-aos="fade-up">
 						<h3>지원</h3>
 						<ul class="flex">
 							<li><a href="#" title="고객센터">고객센터</a></li>

@@ -243,27 +243,11 @@
 
 	 #content2 .content-text2{
 		font-size: var(--small-size);
-		opacity: 0;
-		transform: translateX(300px);
-		transition: all 0.7s ease;
 	}
 
 	#content3 .content-text2{
 		font-size: var(--small-size);
-		opacity: 0;
-		transform: translateX(-300px);
-		transition: all 0.7s ease;
 		text-align: right;
-	}
-
-	#content2 .content-text2.active {
-		opacity: 1;
-  		transform: translateX(0);
-	}
-
-	#content3 .content-text2.active {
-		opacity: 1;
-  		transform: translateX(0);
 	}
 
 	/* #content2, #content3 공통 css*/
@@ -319,16 +303,11 @@
 	justify-content: center;
 	align-items: center;
 	text-align: center;
-	/* transform: translateY(300px); */
-	transform:	translateY(-300px);
-	transition: all 0.7s ease;
-	opacity: 0;
 }
 
-
-#content4 .ghub-text.active {
-	opacity: 1;
-	transform:	translateY(0);
+#content4 .ghub-text h2{
+	font-size: var(--big-size);
+	font-weight: bold;
 }
 
 #content4 .ghub-text p{
