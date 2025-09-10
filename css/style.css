@@ -286,7 +286,7 @@
 		height: 6px;
 	}
 
-	.content-text2 dd{
+	.content-text2 > p{
 		font-size: var(--small-size);
 		line-height: 1.4;
 		padding: 1rem 0;
