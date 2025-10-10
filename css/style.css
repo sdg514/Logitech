@@ -1,5 +1,3 @@
-/*style(main부터 서브까지 공통영역이 아닌 곳을 이곳에서 꾸며보기)*/
-
 /*main*/
 .video-bg {
   position: relative;
@@ -44,6 +42,7 @@
 
 .videoEnd h2{
 	font-size: var(--bigbig-size);
+	font-weight: bold;
 }
 .videoEnd p{
 	font-size: var(--small-size);
@@ -52,6 +51,26 @@
 
 /*1번쨰 content*/
 
+.swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
 #content1{
 	position: relative;
 	overflow: hidden;
@@ -330,7 +349,7 @@
 }
 @media (max-width: 640px){
 	.video-bg{
-		height: 50vh;
+		height: 70vh;
 	}
 	.tabpanel{
 		flex-direction: column;

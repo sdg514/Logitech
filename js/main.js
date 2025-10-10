@@ -63,29 +63,48 @@ topBtn.addEventListener('click', () => {
 });
 
 // 탭기능
-const tabButtons = document.querySelectorAll('[role="tab"]');
-const tabPanels = document.querySelectorAll('[role="tabpanel"]');
+// const tabButtons = document.querySelectorAll('[role="tab"]');
+// const tabPanels = document.querySelectorAll('[role="tabpanel"]');
 
-tabButtons.forEach((tab, index) => {
-  tab.addEventListener("click", () => {
-    // 모든 탭 비활성화
-    tabButtons.forEach(btn => {
-      btn.setAttribute("aria-selected", "false");
-      btn.classList.remove("active");
-      btn.setAttribute("tabindex", "-1");
-    });
+// tabButtons.forEach((tab, index) => {
+//   tab.addEventListener("click", () => {
+//     // 모든 탭 비활성화
+//     tabButtons.forEach(btn => {
+//       btn.setAttribute("aria-selected", "false");
+//       btn.classList.remove("active");
+//       btn.setAttribute("tabindex", "-1");
+//     });
 
-    // 클릭된 탭 활성화
-    tab.setAttribute("aria-selected", "true");
-    tab.classList.add("active");
-    tab.setAttribute("tabindex", "0");
+//     // 클릭된 탭 활성화
+//     tab.setAttribute("aria-selected", "true");
+//     tab.classList.add("active");
+//     tab.setAttribute("tabindex", "0");
 
-    // 모든 탭패널 숨김
-    tabPanels.forEach(panel => panel.classList.remove("active"));
-    tabPanels[index].classList.add("active");
-  });
+//     // 모든 탭패널 숨김
+//     tabPanels.forEach(panel => panel.classList.remove("active"));
+//     tabPanels[index].classList.add("active");
+//   });
+// });
+
+
+// Swiper 초기화
+const swiper = new Swiper('.tab-swiper', {
+  slidesPerView: 1,
+  effect: 'slide',
+  speed: 600
 });
 
+// 탭 버튼 클릭 시 해당 슬라이드로 이동
+const tabButtons = document.querySelectorAll('.tab-btn');
+tabButtons.forEach(btn => {
+  btn.addEventListener('click', () => {
+    const index = btn.dataset.slide;
+    swiper.slideTo(index);
 
+    // active 클래스 토글
+    tabButtons.forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  });
+});
 // AOS
 AOS.init(); 
