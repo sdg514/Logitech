@@ -449,7 +449,6 @@ body {
 }
 
 .nav .sidenav .menu a:hover {
-     border-bottom: 2px solid var(--color-point);
      color: var(--color-point);
 }
 
