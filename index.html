@@ -14,32 +14,30 @@
 	<link rel="icon" type="image/png" sizes="16x16" href="./favicon_ico/favicon-16x16.png">
 
 	<meta property="og:title" content="서동군 로지텍 포트폴리오">
-    <meta property="og:description" content="서동군의 로지텍 포트폴리오 사이트입니다">
-    <meta property="og:image" content="https://logitech-sdg.netlify.app/images/logo2.png">
-    <meta property="og:url" content="https://logitech-sdg.netlify.app/">
-    <meta property="og:type" content="website">
+	<meta property="og:description" content="서동군의 로지텍 포트폴리오 사이트입니다">
+	<meta property="og:image" content="https://logitech-sdg.netlify.app/images/logo2.png">
+	<meta property="og:url" content="https://logitech-sdg.netlify.app/">
+	<meta property="og:type" content="website">
 
-    <!-- 검색엔진 색인 허용 -->
-    <meta name="robots" content="index, follow"> 
+	<!-- 검색엔진 색인 허용 -->
+	<meta name="robots" content="index, follow">
 
 	<!-- Link Swiper's CSS -->
-  	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 	<!-- Swiper JS -->
-  	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 	<!-- 구글 폰트 -->
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
-	
-	<!-- AOS 라이브러리 -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+	<link rel="stylesheet"
+		href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+	<!-- AOS 라이브러리 -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 	<!-- 폰트 어썸 -->
-	<link
-  rel="stylesheet"
-  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
-/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
 </head>
 
 
@@ -52,110 +50,61 @@
 
 	<header id="header">
 		<div class="outer flex">
-			<!--logo-->
-			<h1 class="logo">
-				<a href="./index.html" aria-label="로지텍 홈페이지로 이동">
-					<img src="./images/pc_logo.png" alt="로지텍 로고" />
-					<span class="label-hidden">Logitech Home</span>
-				</a>
-			</h1>
+			<a href="./index.html" aria-label="로지텍 홈페이지로 이동">
+				<img src="./images/pc_logo.png" alt="로지텍 로고" />
+				<span class="label-hidden">Logitech Home</span>
+			</a>
 
-			<!-- pc 중앙 메뉴 -->
-			<nav class="pcMenu flex">
-				<div class="dropdown">
-					<button type="button" aria-label="Logitech 메뉴열기">Logitech</button>
-					<ul class="dropdown-options">
-						<li><a href="#">Mouse</a></li>
-						<li><a href="#">Keyboard</a></li>
-						<li><a href="#">Combo</a></li>
-						<li><a href="#">Headset/Speaker</a></li>
-						<li><a href="#">WebCam</a></li>
-						<li><a href="#">Accessory</a></li>
-					</ul>
-				</div>
-				<div class="dropdown">
-					<button type="button" aria-label="Logitech G 메뉴열기">Logitech G</button>
-					<ul class="dropdown-options">
-						<li><a href="#">Mouse</a></li>
-						<li><a href="#">Keyboard</a></li>
-						<li><a href="#">Driving/pads</a></li>
-						<li><a href="#">Headset/Speaker</a></li>
-						<li><a href="#">racing wheel</a></li>
-						<li><a href="#">Accessory</a></li>
-					</ul>
-				</div>
-				<div class="dropdown">
-					<button type="button" aria-label="지원 메뉴열기">지원</button>
-					<ul class="dropdown-options">
-						<li><a href="#">고객센터</a></li>
-						<li><a href="#">소프트웨어 다운로드</a></li>
+			<input class="menu-icon label-hidden" type="checkbox" id="menu-icon" />
+			<label for="menu-icon"></label>
+
+			<nav class="nav">
+				<div id="mySidenav" class="sidenav">
+					<ul class="flex">
+						<li class="menu"> <a>Logitech</a>
+							<ul class="hide">
+								<li><a href="./sub02_1.html">Mouse</a></li>
+								<li><a href="./sub02.html">Keyboard</a></li>
+								<li><a href="./sub02_2.html">Combo</a></li>
+								<li><a href="./sub02_3.html">Headset/Speaker</a></li>
+								<li><a href="./sub02_4.html">WebCam</a></li>
+								<li><a href="./sub02_5.html">Accessory</a></li>
+							</ul>
+						</li>
+						<li class="menu"> <a>Logitech G</a>
+							<ul class="hide">
+								<li><a href="#">Mouse</a></li>
+								<li><a href="#">Keyboard</a></li>
+								<li><a href="#">Driving/pads</a></li>
+								<li><a href="#">Headset/Speaker</a></li>
+								<li><a href="#">racing wheel</a></li>
+								<li><a href="#">Accessory</a></li>
+							</ul>
+						</li>
+						<li class="menu"> <a>지원</a>
+							<ul class="hide">
+								<li><a href="#">고객센터</a></li>
+								<li><a href="#">소프트웨어 다운로드</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
 			</nav>
-
-			<!--오른쪽 메뉴-->
-			<div id="infoMenu">
-				<form class="search-box flex" role="search" aria-label="제품 검색">
-					<label for="storeSearch" class="label-hidden">제품 검색</label>
-					<input type="text" id="storeSearch" name="storeSearch" placeholder="제품명을 입력해주세요" aria-label="제품명을 입력해주세요" required/>
-					<button type="submit" aria-label="검색">
-						<img src="./images/search.png" alt="" aria-hidden="true" />
-					</button>
-				</form>
-
-				<nav id="qnb">
-					<button type="button" id="menuOpen" aria-label="메뉴 열기">
-						<span></span>
-						<span></span>
-						<span></span>
-					</button>
-					<div id="overlay">
-						<div id="mySidenav" class="sidenav">
-							<button type="button" id="closebtn" class="closebtn" aria-label="메뉴 닫기"></button>
-							<ul class="flex">
-								<li class="menu"> <a>Logitech</a>
-									<ul class="hide">
-										<li><a href="./sub02_1.html">Mouse</a></li>
-										<li><a href="./sub02.html">Keyboard</a></li>
-										<li><a href="./sub02_2.html">Combo</a></li>
-										<li><a href="./sub02_3.html">Headset/Speaker</a></li>
-										<li><a href="./sub02_4.html">WebCam</a></li>
-										<li><a href="./sub02_5.html">Accessory</a></li>
-									</ul>
-								</li>
-								<li class="menu"> <a>Logitech G</a>
-									<ul class="hide">
-										<li><a href="./sub01.html">Mouse</a></li>
-										<li><a href="./sub01_1.html">Keyboard</a></li>
-										<li><a href="./sub01_2.html">Driving/pads</a></li>
-										<li><a href="./sub01_3.html">Headset/Speaker</a></li>
-										<li><a href="./sub01_4.html">racing wheel</a></li>
-										<li><a href="./sub01_5.html">Accessory</a></li>
-									</ul>
-								</li>
-								<li class="menu"> <a>지원</a>
-									<ul class="hide">
-										<li><a href="sub03.html">고객센터</a></li>
-										<li><a href="#">소프트웨어 다운로드</a></li>
-									</ul>
-								</li>
-							</ul>
-						</div>
-					</div>
-				</nav>
-			</div><!--//infoMenu-->
 		</div><!--//outer-->
 	</header>
 
 	<section class="video-section flex">
 		<div class="video-bg">
 			<video id="videoPlay" autoplay muted playsinline loop>
-				<source src="https://resource.logitechg.com/w_1920,ac_none,f_auto,dpr_1.0,q_auto:best/content/dam/gaming/en/innovation/mechanical-switches/mechanical-video.mp4" type="video/mp4" />
+				<source
+					src="https://resource.logitechg.com/w_1920,ac_none,f_auto,dpr_1.0,q_auto:best/content/dam/gaming/en/innovation/mechanical-switches/mechanical-video.mp4"
+					type="video/mp4" />
 			</video>
 			<div id="videoEnd" class="videoEnd flex outer" aria-label="video-content">
 				<h2>LIGHTSPEED</h2>
-				<p>LIGHTSPEED는 저지연과 안정적인 성능을 구현하는<br class="pc"/> 엔드투엔드 무선 솔루션입니다.<br /> 게이머 누구나 무선의 자유를 누릴 수 있습니다.</p>
+				<p>LIGHTSPEED는 저지연과 안정적인 성능을 구현하는<br class="pc" /> 엔드투엔드 무선 솔루션입니다.<br /> 게이머 누구나 무선의 자유를 누릴 수 있습니다.</p>
 
+				<!-- <button class="glow-on-hover" type="button">HOVER ME, THEN CLICK ME!</button> -->
 				<a href="#" class="a_button" aria-label="LIGHTSPEED 보러가기">LIGHTSPEED 보러가기</a>
 			</div>
 		</div>
@@ -163,11 +112,13 @@
 
 	<section id="content1">
 		<h2 class="label-hidden">Logitech 제품 정보 탭 영역</h2>
-		
+
 		<div class="outer">
 			<div class="tab flex gap" role="tablist" aria-label="제품 정보 탭">
-				<button type="button" data-aos="fade-up" role="tab" aria-selected="true" aria-controls="panel1" id="tab1" tabindex="0" class="active">Logitech G<br class="pc"/> 카테고리</button>
-				<button type="button" data-aos="fade-up" role="tab" aria-selected="false" aria-controls="panel2" id="tab2" tabindex="-1">Logitech<br class="pc"/> 카테고리</button>
+				<button type="button" data-aos="fade-up" role="tab" aria-selected="true" aria-controls="panel1"
+					id="tab1" tabindex="0" class="active">Logitech G<br class="pc" /> 카테고리</button>
+				<button type="button" data-aos="fade-up" role="tab" aria-selected="false" aria-controls="panel2"
+					id="tab2" tabindex="-1">Logitech<br class="pc" /> 카테고리</button>
 			</div>
 
 			<div class="tabpanel-wrapper">
@@ -314,7 +265,7 @@
 			<div class="outer flex">
 				<div class="content-text2">
 					<h3 class="dt_line" data-aos="fade-right">ASTRO 시리즈</h3>
-					<p data-aos="fade-right">트렌드 하이엔드 콘솔 헤드셋 스타일리시한<br/> 플레이를 즐겨보세요.</p>
+					<p data-aos="fade-right">트렌드 하이엔드 콘솔 헤드셋 스타일리시한<br /> 플레이를 즐겨보세요.</p>
 					<a href="#" class="a_button" aria-label="ASTRO 시리즈 구매하기" data-aos="fade-right">ASTRO 시리즈 구매하기</a>
 				</div>
 			</div>
@@ -326,10 +277,11 @@
 		<div class="outer flex">
 			<div class="ghub-text flex" data-aos="fade-up">
 				<h2 data-aos="fade-up">LOGITECH G HUB 다운로드</h2>
-				<p data-aos="fade-up">로지텍 G 기어의 잠재력을 100% 끌어내세요.<br>G HUB는 키 매핑, RGB 설정,<br class="pc"/> 프로필 저장을 지원합니다.</p>
+				<p data-aos="fade-up">로지텍 G 기어의 잠재력을 100% 끌어내세요.<br>G HUB는 키 매핑, RGB 설정,<br class="pc" /> 프로필 저장을 지원합니다.
+				</p>
 				<div class="ghub-buttons flex gap">
-					<a href="#" class="a_button" data-aos="fade-up">Windows용<br class="pc"/> 다운로드</a>
-					<a href="#" class="a_button" data-aos="fade-up">Mac용 <br class="pc"/> 다운로드</a>
+					<a href="#" class="a_button" data-aos="fade-up">Windows용<br class="pc" /> 다운로드</a>
+					<a href="#" class="a_button" data-aos="fade-up">Mac용 <br class="pc" /> 다운로드</a>
 				</div>
 			</div>
 		</div>
@@ -355,11 +307,16 @@
 					</form>
 
 					<div class="footer_social flex">
-						<a href="#" target="_blank" aria-label="discord" data-aos="fade-up"><i class="fa-brands fa-discord icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="facebook" data-aos="fade-up"><i class="fa-brands fa-facebook icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="youtube" data-aos="fade-up"><i class="fa-brands fa-youtube icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="x-twitter" data-aos="fade-up"><i class="fa-brands fa-x-twitter icon flex"></i></a>
-						<a href="#" target="_blank" aria-label="instagram" data-aos="fade-up"><i class="fa-brands fa-instagram icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="discord" data-aos="fade-up"><i
+								class="fa-brands fa-discord icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="facebook" data-aos="fade-up"><i
+								class="fa-brands fa-facebook icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="youtube" data-aos="fade-up"><i
+								class="fa-brands fa-youtube icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="x-twitter" data-aos="fade-up"><i
+								class="fa-brands fa-x-twitter icon flex"></i></a>
+						<a href="#" target="_blank" aria-label="instagram" data-aos="fade-up"><i
+								class="fa-brands fa-instagram icon flex"></i></a>
 					</div>
 				</div>
 				<nav class="footer_content2 flex">
@@ -398,7 +355,9 @@
 					<li><a href="#" aria-label="이용약관">이용약관</a></li>
 					<li><a href="#" aria-label="주소">주소</a></li>
 				</ul>
-				<address>고객 지원 센터 (제품 및 A/S 문의처):<br class="pc"/> 00798-601-8207 (수신자부담)<br />사업자 등록번호: 107-86-10308<br />로지텍 코리아 대표이상: 권석태 |<br class="pc"/> 서울특별시 영등포구 여의공원로 101,<br class="pc"/> CCMM 빌딩 402B</address>
+				<address>고객 지원 센터 (제품 및 A/S 문의처):<br class="pc" /> 00798-601-8207 (수신자부담)<br />사업자 등록번호:
+					107-86-10308<br />로지텍 코리아 대표이상: 권석태 |<br class="pc" /> 서울특별시 영등포구 여의공원로 101,<br class="pc" /> CCMM
+					빌딩 402B</address>
 			</div>
 
 			<div>

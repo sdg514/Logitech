@@ -1,21 +1,22 @@
 /*main*/
 .video-bg {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-}
-.video-bg video {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
-  transform: translate(-50%, -50%);
-  object-fit: cover;
+	position: relative;
+	width: 100%;
+	height: 100vh;
+	overflow: hidden;
 }
 
-.videoEnd{
+.video-bg video {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	min-width: 100%;
+	min-height: 100%;
+	transform: translate(-50%, -50%);
+	object-fit: cover;
+}
+
+.videoEnd {
 	width: 100%;
 	height: 100%;
 	position: relative;
@@ -29,22 +30,24 @@
 	transform: translateX(-500px);
 }
 
-@keyframes textSlide{
-	form{
+@keyframes textSlide {
+	form {
 		opacity: 0;
 		transform: translateX(-500px);
 	}
-	to{
+
+	to {
 		opacity: 1;
 		transform: translateX(0px);
 	}
 }
 
-.videoEnd h2{
+.videoEnd h2 {
 	font-size: var(--bigbig-size);
 	font-weight: bold;
 }
-.videoEnd p{
+
+.videoEnd p {
 	font-size: var(--small-size);
 	line-height: 1.5;
 }
@@ -52,26 +55,27 @@
 /*1번쨰 content*/
 
 .swiper {
-      width: 100%;
-      height: 100%;
-    }
+	width: 100%;
+	height: 100%;
+}
 
-    .swiper-slide {
-      text-align: center;
-      font-size: 18px;
-      background: #444;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #444;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
 
-    .swiper-slide img {
-      display: block;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-#content1{
+.swiper-slide img {
+	display: block;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#content1 {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
@@ -105,24 +109,24 @@
 	outline: none;
 }
 
-.tabpanel-wrapper{
+.tabpanel-wrapper {
 	padding-top: 5rem;
 }
 
 .tabpanel {
-  	display: none;
+	display: none;
 }
 
 .tabpanel.active {
-  	display: flex;
+	display: flex;
 }
 
-.product-grid{
+.product-grid {
 	flex-direction: column;
 	width: calc(50% - 0.5rem)
 }
 
-.card{
+.card {
 	padding: 20px;
 	text-align: center;
 	border: 1px solid #222;
@@ -136,21 +140,21 @@
 	min-height: 30rem;
 }
 
-.card:hover{
+.card:hover {
 	transform: translateY(-4px);
 	box-shadow: 0 0 15px #ffffff94;
 }
 
-.gradientCard{
+.gradientCard {
 	background: linear-gradient(170deg, #14161c, #393c49);
 	flex: 1;
 }
 
-.left1{
+.left1 {
 	flex: 1 1 50%;
 }
 
-.content-text{
+.content-text {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
@@ -159,82 +163,82 @@
 }
 
 .content-text dt,
-.card:hover dl{
+.card:hover dl {
 	text-shadow: 1px 0px 4px var(--color-point);
-  	-webkit-text-stroke: 0px var(--color-point);
+	-webkit-text-stroke: 0px var(--color-point);
 }
 
-.content-text dl{
+.content-text dl {
 	font-size: var(--font-size);
 	font-weight: bold;
 }
 
-.card:hover span{
+.card:hover span {
 	padding-left: 5px;
 	transition: all 0.5s;
 }
 
 /* 탭 a태그 안에 이미지 */
-.lgG_mouse{
+.lgG_mouse {
 	background-image: url(https://resource.logitechg.com/w_420,h_1024,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-wireless-gaming-mouse/pro-wireless-feature-7-mobile.png?v=1);
 }
 
-.lgG_headset{
+.lgG_headset {
 	background-image: url(https://resource.logitechg.com/w_695,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g522-lightspeed-pdp/g522-lightspeed-synchronized-pro-g-audio-drivers-key-feature-1.jpg?v=1);
 }
 
-.lgG_keyboard{
+.lgG_keyboard {
 	background-image: url(https://resource.logitechg.com/w_797,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-x-tkl-rapid/pro-x-tkl-rapid-feature-05.jpg?v=1);
 }
 
-.lgG_combo{
+.lgG_combo {
 	background-image: url(https://resource.logitech.com/w_1440,h_810,ar_16:9,c_fill,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/combos/mx-keys-s-combo-for-mac/buy/mx-key-s-combo-mac-intro-cover.jpg);
 }
 
-.lgG_Accessory{
+.lgG_Accessory {
 	background-image: url(https://resource.logitechg.com/w_692,c_lpad,ar_4:3,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/accessories/key-caps/key-caps-gallery-1-pink.png?v=1);
 }
 
-.lgG_racing{
+.lgG_racing {
 	background-image: url(https://resource.logitechg.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/pro-racing/pro-racing-wheel/01-banner-desktop-pro-wheel.png?v=1);
 }
 
-.lg_keyboard{
+.lg_keyboard {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/keyboards/k860-ergo/gallery/ergo-k860-gallery-04.png);
 }
 
-.lg_mouse{
+.lg_mouse {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/pop-wireless-mouse/gallery/wave-2/pop-mouse-gallery-mist-2.png);
 }
 
-.lg_headset{
+.lg_headset {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/video-conferencing/h151/gallery/h151-gallery-01.png);
 }
 
-.lg_Accessory{
+.lg_Accessory {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/mice/desk-mat-studio-series/gallery/logitech-desk-mat-studio-series-corner-view-lilac.png);
 }
 
-.lg_webcam{
+.lg_webcam {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/webcams/brio-300/gallery/brio-300-gallery-offwhite-1.png);
 }
 
-.lg_combo{
+.lg_combo {
 	background-image: url(https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/combos/mk470-slim-wireless-combo/gallery-images/mk470-gallery-offwhite-matt-kor-1.png);
 }
 
 /*2,3번쨰 content*/
 
-#content2{
+#content2 {
 	position: relative;
 	overflow: hidden;
 	width: 100%;
 	height: auto;
 	margin-top: 5rem;
-	
+
 }
 
-#content2 .content2-bg{
+#content2 .content2-bg {
 	background-image: url(https://resource.logitechg.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/plp-pro/04-banner-pro-series-pro-x-superlight-desktop.png?v=1);
 	background-repeat: no-repeat;
 	background-position: center;
@@ -244,62 +248,63 @@
 }
 
 
-#content3 .content3-bg{
+#content3 .content3-bg {
 	background-image: url(https://resource.logitechg.com/w_1800,h_1800,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/sim-racing-lp/sim-racing-lp-driving-confi-banner-desktop-3.jpg?v=1);
 	background-repeat: no-repeat;
 	background-position: center;
 	background-size: cover;
 	width: 100%;
 	height: 90rem;
-	
+
 }
 
-	#content2 .outer,
-	#content3 .outer{
-		flex-flow: column nowrap;
-		justify-content: center;
-	}
+#content2 .outer,
+#content3 .outer {
+	flex-flow: column nowrap;
+	justify-content: center;
+}
 
-	 #content2 .content-text2{
-		font-size: var(--small-size);
-	}
+#content2 .content-text2 {
+	font-size: var(--small-size);
+}
 
-	#content3 .content-text2{
-		font-size: var(--small-size);
-		text-align: right;
-	}
+#content3 .content-text2 {
+	font-size: var(--small-size);
+	text-align: right;
+}
 
-	/* #content2, #content3 공통 css*/
-	.content-text2 .dt_line{
-		font-weight: bolder;
-		position: relative;
-		margin-bottom: 25px;
-		margin-top: 25px;
-		display: inline-block;
-	}
+/* #content2, #content3 공통 css*/
+.content-text2 .dt_line {
+	font-weight: bolder;
+	position: relative;
+	margin-bottom: 25px;
+	margin-top: 25px;
+	display: inline-block;
+}
 
-	.content-text2 .dt_line::after{
-		background-color: #c3c6c8;
-		content: "";
-		display: block;
-		height: 100%;
-		position: absolute;
-		left: 0; bottom: -1.5rem;
-		width: 100%;
-		height: 6px;
-	}
+.content-text2 .dt_line::after {
+	background-color: #c3c6c8;
+	content: "";
+	display: block;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	bottom: -1.5rem;
+	width: 100%;
+	height: 6px;
+}
 
-	.content-text2 > p{
-		font-size: var(--small-size);
-		line-height: 1.4;
-		padding: 1rem 0;
-		margin-bottom: 2rem;
-	}
+.content-text2>p {
+	font-size: var(--small-size);
+	line-height: 1.4;
+	padding: 1rem 0;
+	margin-bottom: 2rem;
+}
 
 
 /* 4번째 content */
 
-#content4{
+#content4 {
 	position: relative;
 	background: url(../images/content3.png) no-repeat center;
 	background-size: cover;
@@ -307,12 +312,12 @@
 	height: 100vh;
 }
 
-#content4 .outer{
+#content4 .outer {
 	justify-content: center;
 	align-items: center;
 }
 
-#content4 .ghub-text{
+#content4 .ghub-text {
 	width: 50%;
 	height: 50%;
 	border-radius: 50px;
@@ -324,59 +329,61 @@
 	text-align: center;
 }
 
-#content4 .ghub-text h2{
+#content4 .ghub-text h2 {
 	font-size: var(--big-size);
 	font-weight: bold;
 }
 
-#content4 .ghub-text p{
+#content4 .ghub-text p {
 	padding: 2rem 0;
 }
 
-.ghub-buttons{
+.ghub-buttons {
 	padding-top: 1rem;
 }
 
 
-@media (max-width: 1024px){
-	.tabpanel{
+@media (max-width: 1024px) {
+	.tabpanel {
 		flex-direction: column;
 	}
 
-	.product-grid{
+	.product-grid {
 		width: 100%;
 	}
 }
-@media (max-width: 640px){
-	.video-bg{
+
+@media (max-width: 640px) {
+	.video-bg {
 		height: 70vh;
 	}
-	.tabpanel{
+
+	.tabpanel {
 		flex-direction: column;
 	}
 
-	.product-grid{
+	.product-grid {
 		width: 100%;
 	}
 
-	.product-grid > div{
+	.product-grid>div {
 		flex-direction: column;
 	}
 
-	.card{
+	.card {
 		min-height: 20rem;
 	}
 
 	#content2 .content2-bg,
-	#content3 .content3-bg{
+	#content3 .content3-bg {
 		height: 40rem;
 	}
 
-	#content4{
+	#content4 {
 		height: 40rem;
 	}
 
-	#content4 .ghub-text{
+	#content4 .ghub-text {
 		width: auto;
 		height: auto;
 		padding: 5rem 2rem;

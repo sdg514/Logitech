@@ -1,33 +1,10 @@
+// 로딩
 window.addEventListener("load", () => {
   const loading = document.getElementById("loading");
 
   setTimeout(() => {
     loading.classList.add("hidden");
   }, 1800); // 1.8초 후 로딩화면 사라짐
-});
-
-// header 메뉴
-const header = document.getElementById("header");
-
-window.addEventListener("scroll", () => {
-  if (window.scrollY > 100) {
-    header.style.backgroundColor = "rgba(26, 26, 26, .9)";
-  } else {
-    header.style.backgroundColor = "transparent";
-  }
-});
-
-document.getElementById("menuOpen").addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "block";
-});
-document.getElementById("closebtn").addEventListener("click", () => {
-  document.getElementById("overlay").style.display = "none";
-});
-
-document.getElementById("overlay").addEventListener("click", (e) => {
-  if (!document.getElementById("mySidenav").contains(e.target)) {
-    document.getElementById("overlay").style.display = "none";
-  }
 });
 
 // nav 클릭시 메뉴 open
