@@ -382,10 +382,6 @@
 }
 
 @media (max-width: 640px) {
-	.video-bg {
-		height: 70vh;
-	}
-
 	.tabpanel {
 		flex-direction: column;
 	}
