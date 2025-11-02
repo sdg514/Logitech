@@ -386,9 +386,11 @@
 		background: url(/images/mobile-bg.webp) no-repeat center;
 		background-size: cover;
 	}
+	
 	.video-bg video{
 		display: none;
 	}
+
 	.tabpanel {
 		flex-direction: column;
 	}
