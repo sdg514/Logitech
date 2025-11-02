@@ -691,6 +691,10 @@ footer .b_menu li:nth-child(1) a:before {
           right: 3.5rem;
      }
 
+     .nav .sidenav>ul{
+          gap: 0;
+     }
+
      footer .outer>div {
           flex-direction: column;
      }
