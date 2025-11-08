@@ -3,6 +3,14 @@ html {
      font-size: 62.5%;
 }
 
+body {
+     font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
+     font-size: var(--font-size);
+     line-height: 1.6;
+     color: var(--color-text);
+     background-color: var(--color-bg);
+}
+
 :root {
      --color-bg: #000000;
      /* 메인 배경 */
@@ -86,13 +94,7 @@ a.btn:hover {
      --t: 0.3s;
 }
 
-body {
-     font-family: 'Pretendard', 'Noto Sans KR', sans-serif;
-     font-size: var(--font-size);
-     line-height: 1.6;
-     color: var(--color-text);
-     background-color: var(--color-bg);
-}
+
 
 /* 로딩 전체 화면 */
 #loading {
@@ -675,7 +677,7 @@ footer .b_menu li:nth-child(1) a:before {
 
      .menu-icon:checked+label,
      .menu-icon:not(:checked)+label {
-          top: 4rem;
+          top: 4.5rem;
           right: 3.5rem;
      }
 
