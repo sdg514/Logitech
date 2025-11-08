@@ -182,13 +182,13 @@ body {
 }
 
 #header div .logo img {
-     width: 12rem;
+     width: 14rem;
 }
 
 .menu-icon:checked+label,
 .menu-icon:not(:checked)+label {
      position: absolute;
-     top: 4.5rem;
+     top: 5.5rem;
      right: 4.5rem;
      display: block;
      width: 3rem;
@@ -258,7 +258,7 @@ body {
 
 .nav {
      position: absolute;
-     top: 2rem;
+     top: 3rem;
      right: 2rem;
      display: block;
      width: 8rem;
