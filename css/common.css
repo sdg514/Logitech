@@ -1,4 +1,12 @@
 /*common:웹폰트/header/footer/body/a와 같이 모든 문서에 공통적으로 적용되어지는 부분*/
+@font-face {
+	font-family: 'Pretendard Variable';
+	font-weight: 45 920;
+	font-style: normal;
+	font-display: swap;
+	src: url('../font/PretendardVariable.woff2') format('woff2-variations');
+}
+
 html {
      font-size: 62.5%;
 }
