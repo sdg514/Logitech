@@ -140,18 +140,6 @@ body {
      box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
 }
 
-/* 본문 */
-#main-content {
-     display: none;
-     background: #111;
-     color: #eee;
-     min-height: 100vh;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     font-size: 1.5rem;
-}
-
 /* 애니메이션 */
 @keyframes spin {
      100% {
